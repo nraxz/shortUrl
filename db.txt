@@ -1,0 +1,8 @@
+CREATE TABLE `short_urls` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `iid` int(11) NOT NULL,
+  `long_url` varchar(255) NOT NULL,
+  `short_code` char(6) NOT NULL,
+  `date_created` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
